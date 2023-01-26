@@ -6,7 +6,7 @@ Adds extra information of your AWS CodeBuild build via environment variables.
 Add the following command to the `install` or `pre_build` phase of your buildspec,
 and replace `<A_COMMIT_HASH>` by the lastest commit hash (or your preferred revision):
 
-    curl -fsSL https://raw.githubusercontent.com/thii/aws-codebuild-extras/<A_COMMIT_HASH>/install >> extras.sh && . ./extras.sh
+    curl -fsSL https://raw.githubusercontent.com/spellingb/aws-codebuild-extras/<A_COMMIT_HASH>/install >> extras.sh && . ./extras.sh
 
 Alternatively, you can fork this repo and always point to the default branch of your fork.
 
@@ -17,7 +17,7 @@ phases:
   install:
     commands:
       - echo Installing codebuild-extras...
-      - curl -fsSL https://raw.githubusercontent.com/thii/aws-codebuild-extras/<A_COMMIT_HASH>/install >> extras.sh
+      - curl -fsSL https://raw.githubusercontent.com/spellingb/aws-codebuild-extras/<A_COMMIT_HASH>/install >> extras.sh
       - . ./extras.sh
 ```
 |NAME|VALUE

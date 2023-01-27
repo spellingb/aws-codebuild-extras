@@ -31,6 +31,7 @@ export CODEBUILD_BUILD_URL=https://$AWS_DEFAULT_REGION.console.aws.amazon.com/co
 echo "==> AWS CodeBuild Extra Environment Variables:"
 echo "==> CI = $CI"
 printenv | grep CODEBUILD
+printenv | grep ARTIFACT_BUCKET
 # echo "==> CODEBUILD = $CODEBUILD"
 # echo "==> CODEBUILD_ACCOUNT_ID = $CODEBUILD_ACCOUNT_ID"
 # echo "==> CODEBUILD_GIT_AUTHOR = $CODEBUILD_GIT_AUTHOR"
